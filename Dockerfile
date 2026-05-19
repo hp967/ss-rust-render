@@ -1,22 +1,18 @@
 # ================================
-# SS-Rust Render — 多阶段构建
-# 阶段 1：在容器内编译 shadowsocks-rust（生成匹配 Render amd64 的二进制）
-# 阶段 2：极小 Alpine 运行镜像
+# SS-Rust Render — 下载预编译 binary（不依赖构建环境架构）
+# 从 shadowsocks-rust GitHub Release 拉取 amd64 Linux 二进制
 # ================================
 
-# ---------- 构建阶段 ----------
-FROM rust:1.78-slim AS builder
+FROM alpine:3.21 AS downloader
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends pkg-config libssl-dev && \
-    rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache curl tar
 
-WORKDIR /app
-
-# 拉取 shadowsocks-rust 稳定版源码
-RUN git clone --depth 1 --branch v1.21.2 \
-    https://github.com/shadowsocks/shadowsocks-rust.git . && \
-    cargo build --release
+# 下载 shadowsocks-rust v1.21.2 的 amd64 Linux 预编译包
+RUN curl -fsSL \
+    "https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.21.2/shadowsocks-v1.21.2.x86_64-unknown-linux-gnu.tar.xz" \
+    -o /tmp/ss.tar.xz && \
+    tar xJf /tmp/ss.tar.xz -C /tmp/ && \
+    ls -la /tmp/ssserver
 
 # ---------- 运行阶段 ----------
 FROM alpine:3.21
@@ -24,7 +20,7 @@ FROM alpine:3.21
 RUN apk add --no-cache ca-certificates bash && \
     update-ca-certificates
 
-COPY --from=builder /app/target/release/ssserver /usr/local/bin/ssserver
+COPY --from=downloader /tmp/ssserver /usr/local/bin/ssserver
 RUN ln -s /usr/local/bin/ssserver /usr/local/bin/shadowsocks-server && \
     chmod +x /usr/local/bin/ssserver /usr/local/bin/shadowsocks-server && \
     ls -la /usr/local/bin/ && \
