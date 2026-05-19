@@ -1,0 +1,31 @@
+# ================================
+# SS-Rust Render 部署配置
+# ================================
+
+name: ss-rust-render
+
+type: web
+
+# 环境变量
+envVars:
+  - key: SS_SERVER_PORT
+    value: "8388"
+
+  # ═══ 关键修复 3：SS_PASSWORD 必须在 Render Dashboard → Environment
+  #      设置为 Secret 类型，不能写死在文件里
+  #      Secret name: SS_PASSWORD  value: <你的Shadowsocks密码>
+
+  - key: SS_METHOD
+    value: aes-256-gcm
+
+# CPU / RAM
+resources:
+  cpu: 0.1
+  memory: 512MB
+
+# ═══ 关键修复 4：TCP 服务没有 HTTP 路径
+#      空字符串让 Render 跳过 HTTP health check，
+#      仅靠 HEALTHCHECK CMD exit 0 (Dockerfile内)来判断存活
+healthCheckPath: ""
+
+autoDeploy: true

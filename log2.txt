@@ -1,0 +1,10 @@
+root@n200200:~# git ls-remote https://github.com/hp967/ss-rust-render.git
+2f98b8aff04ccf9c21905c516c6e425d5de50405	HEAD
+2f98b8aff04ccf9c21905c516c6e425d5de50405	refs/heads/main
+root@n200200:~# git clone https://github.com/hp967/ss-rust-render.git /tmp/ss-test
+Cloning into '/tmp/ss-test'...
+fatal: unable to access 'https://github.com/hp967/ss-rust-render.git/': Recv failure: Connection reset by peer
+root@n200200:~# curl -sL --max-time 10 "https://api.github.com/repos/hp967/ss-rust-render" | head -3
+{
+  "id": 1242011054,
+  "node_id": "R_kgDOSgeVrg",

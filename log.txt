@@ -1,0 +1,50 @@
+2026-05-18T07:11:48.877789594Z ==> Deploying...
+2026-05-18T07:11:49.09264146Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-18T07:11:54.155858693Z ==> Exited with status 128
+2026-05-18T07:11:54.16713576Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2026-05-18T07:26:54.229803347Z ==> Port scan timeout reached, no open ports detected. Bind your service to at least one port. If you don't need to receive traffic on any port, create a background worker instead.
+2026-05-18T07:26:54.632291879Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+2026-05-18T07:51:27.479653898Z ==> Deploying...
+2026-05-18T07:51:27.713297133Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-18T07:51:31.686160505Z ==> Exited with status 128
+2026-05-18T07:51:31.688457357Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2026-05-18T08:06:29.536565385Z ==> Port scan timeout reached, no open ports detected. Bind your service to at least one port. If you don't need to receive traffic on any port, create a background worker instead.
+2026-05-18T08:06:30.022248855Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+2026-05-18T08:06:56.823098675Z ==> Deploying...
+2026-05-18T08:06:57.061076127Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-18T08:07:01.847625978Z ==> Exited with status 128
+2026-05-18T08:07:01.85010607Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2026-05-18T08:18:57.739573143Z ==> Deploying...
+2026-05-18T08:18:57.965490571Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-18T08:19:02.897753629Z ==> Exited with status 128
+2026-05-18T08:19:02.900856787Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2026-05-18T08:34:04.93389433Z ==> Port scan timeout reached, no open ports detected. Bind your service to at least one port. If you don't need to receive traffic on any port, create a background worker instead.
+2026-05-18T08:34:05.332325452Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+2026-05-18T08:51:30.412268572Z ==> Deploying...
+2026-05-18T08:51:30.628477533Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-18T08:51:35.291227021Z ==> Exited with status 128
+2026-05-18T08:51:35.293767884Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2026-05-18T08:59:55.465298319Z ==> Deploying...
+2026-05-18T08:59:55.717170876Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-18T08:59:59.091308053Z ==> Exited with status 128
+2026-05-18T08:59:59.094146296Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2026-05-18T09:01:09.350118939Z ==> Deploying...
+2026-05-18T09:01:09.57053238Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-18T09:01:14.526180207Z ==> Exited with status 128
+2026-05-18T09:01:14.553593087Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2026-05-18T09:16:14.946114263Z ==> Port scan timeout reached, no open ports detected. Bind your service to at least one port. If you don't need to receive traffic on any port, create a background worker instead.
+2026-05-18T09:16:15.350645072Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+2026-05-18T09:51:22.408602389Z ==> Deploying...
+2026-05-18T09:51:22.680408917Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-18T09:51:26.993631361Z ==> Exited with status 128
+2026-05-18T09:51:26.997574143Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2026-05-18T09:59:05.452726564Z ==> Deploying...
+2026-05-18T09:59:05.666250528Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-18T09:59:10.11615077Z ==> Exited with status 128
+2026-05-18T09:59:10.123487158Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2026-05-18T10:09:28.313672566Z ==> Deploying...
+2026-05-18T10:09:28.529395272Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-18T10:09:32.90873348Z ==> Exited with status 128
+2026-05-18T10:09:32.913127116Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2026-05-18T10:24:35.010312448Z ==> Port scan timeout reached, no open ports detected. Bind your service to at least one port. If you don't need to receive traffic on any port, create a background worker instead.
+2026-05-18T10:24:35.435850497Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
