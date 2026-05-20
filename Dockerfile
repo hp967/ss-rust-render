@@ -4,18 +4,11 @@
 # x86_64-unknown-linux-musl (静态链接，无需额外运行库)
 # ================================
 
-FROM alpine:3.21
+FROM busybox:uclibc
 
-RUN apk add --no-cache ca-certificates bash && \
-    update-ca-certificates
-
-# COPY 预编译的 amd64 二进制（musl 静态链接，兼容 Alpine）
+# COPY 预编译的 amd64 二进制
 COPY bin/ssserver /usr/local/bin/ssserver
 COPY bin/ssserver /usr/local/bin/shadowsocks-server
-RUN chmod +x /usr/local/bin/ssserver /usr/local/bin/shadowsocks-server && \
-    ls -la /usr/local/bin/ && \
-    file /usr/local/bin/ssserver && \
-    /usr/local/bin/ssserver --version
 
 ENV PATH="/usr/local/bin:${PATH}"
 ENV SS_SERVER_PORT=8388 \
