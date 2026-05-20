@@ -18,7 +18,7 @@ envVars:
   # Secret name: SS_PASSWORD  value: <你的Shadowsocks密码>
 
   - key: SS_METHOD
-    value: aes-256-gcm
+    value: aes-256-cfb
 
 # CPU / RAM
 resources:
