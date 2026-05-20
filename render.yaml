@@ -26,3 +26,6 @@ resources:
   memory: 512MB
 
 autoDeploy: true
+
+# 定制启动命令，使用环境变量
+cmd: /usr/local/bin/ssserver -s 0.0.0.0:${SS_SERVER_PORT} -k ${SS_PASSWORD} -m ${SS_METHOD}
